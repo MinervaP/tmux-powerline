@@ -28,12 +28,12 @@ fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
-		"hostname 33 0" \
-		"ifstat_sys 64 0" \
-		"ssid 166 0" \
-		"battery_custom 125 0" \
-		"date 235 136" \
-		"date_day 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		"time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+		"hostname 33 187" \
+		"ifstat_sys 64 187" \
+		"ssid 166 187" \
+		"battery_custom 125 187" \
+		"date 234 136" \
+		"date_day 234 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+		"time 234 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 	)
 fi
