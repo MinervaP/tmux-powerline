@@ -29,9 +29,9 @@ fi
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
 		"hostname 33 0" \
-		"ifstat_sys 30 255" \
-		"ssid 89 211" \
-		"battery 137 127" \
+		"ifstat_sys 64 0" \
+		"ssid 166 0" \
+		"battery_custom 125 0" \
 		"date 235 136" \
 		"date_day 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		"time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
