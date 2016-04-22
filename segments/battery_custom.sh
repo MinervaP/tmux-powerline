@@ -4,13 +4,12 @@ run_segment() {
   status=$(echo $info | awk '{ print $3 }' | sed -e 's/.$//')
 
   if [ $status == 'discharging' ]; then
-    icon=''
+    echo "${remaining}"
   elif [ $status == 'charging' ]; then
-    icon='⚡️'
+    echo "⚡️ ${remaining}"
   elif [ $status == 'charged' ]; then
-    icon='🔋'
+    echo "🔋 ${remaining}"
   else
-    icon=''
+    echo "${remaining}"
   fi
-  echo "${icon}  ${remaining}"
 }
