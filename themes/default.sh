@@ -32,7 +32,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		"ifstat_sys 64 187" \
 		"ssid 166 187" \
 		"battery_custom 125 187" \
-		"date 234 136" \
-		"time 234 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+		"date 234 187" \
+		"time 234 187 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 	)
 fi
