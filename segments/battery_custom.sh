@@ -1,7 +1,7 @@
 run_segment() {
   info=$(pmset -g batt | head -n 2 | tail -n 1)
-  remaining=$(echo $info | awk '{ print $2 }' | sed -e 's/.$//')
-  status=$(echo $info | awk '{ print $3 }' | sed -e 's/.$//')
+  remaining=$(echo $info | awk '{ print $3 }' | sed -e 's/.$//')
+  status=$(echo $info | awk '{ print $4 }' | sed -e 's/.$//')
 
   if [ $status == 'discharging' ]; then
     echo "${remaining}"
